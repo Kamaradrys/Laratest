@@ -1,4 +1,4 @@
-@extends('layouts.apps')
+@extends('layouts.app')
 @section('content')
 	<h1>Liste des clients</h1>
 	<a href="/clients/create" class="btn btn-sm btn-success my-3">Nouveau clients</a>

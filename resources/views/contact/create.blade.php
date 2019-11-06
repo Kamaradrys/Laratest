@@ -1,4 +1,4 @@
-@extends('layouts.apps')
+@extends('layouts.app')
 @section('content')
 	@if(!session()->has('message'))
 		<h2 class="dispay-4 my-5">Contactez Nous !</h2>

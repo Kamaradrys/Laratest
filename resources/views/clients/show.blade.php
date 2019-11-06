@@ -1,4 +1,4 @@
-@extends('layouts.apps')
+@extends('layouts.app')
 @section('content')
 	 <h1>{{ $client->name }}</h1>
 	 <p><strong>Nom : </strong>{{ $client->name }}</p>

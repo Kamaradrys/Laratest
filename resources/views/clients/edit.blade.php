@@ -1,4 +1,4 @@
-@extends('layouts.apps')
+@extends('layouts.app')
 @section('content')
 <h3>Editer le profil de {{ $client->name }}</h3>
 <form action="{{ asset('/clients') }}/{{ $client->id }}" method="POST">
