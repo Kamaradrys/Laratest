@@ -15,6 +15,12 @@
 			<li class="nav-item"><a href="/contact" class="nav-link">Contactez-nous</a></li>
 			<li class="nav-item"><a href="/clients" class="nav-link">Voir nos clients</a></li>
 		</ul>
+		@if(session()->has('message'))
+			
+		<div class="alert alert-success" role="alert">
+  				{{ session()->get('message')}}
+		</div>
+		@endif
 	</div>
 <div class="container">
 	@yield('content')

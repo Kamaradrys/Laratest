@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\ContactController;
+use App\Mail\ContactMail;
 
 class ContactController extends Controller
 {
@@ -24,7 +25,9 @@ class ContactController extends Controller
     		'message' => 'required'
     	]);
 
-    	//dd($data);
-    	Mail::to('test@test.com')->send(new ContactController());
+    	//envoi de mail
+    	Mail::to('test@test.com')->send(new ContactMail($data));
+    	//message flash plus redirection 
+    	return redirect('contact')->with('message','Votre message a été envoyer avec succès !');
     }
 }
