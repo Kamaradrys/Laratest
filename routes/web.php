@@ -23,7 +23,7 @@
 
 
 route::view('/','welcome');
-route::view('/a-propos','a-propos')->name('a-propos');
+route::view('/a-propos','a-propos')->name('a-propos')->middleware('test');
 
  
 

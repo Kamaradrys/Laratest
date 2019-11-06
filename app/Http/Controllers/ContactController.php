@@ -9,8 +9,8 @@ use App\Mail\ContactMail;
 
 class ContactController extends Controller
 {
-    
 
+ 
     public function create()
     {
 
